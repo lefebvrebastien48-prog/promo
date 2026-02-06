@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<header>
 
-</header>
 <body>
+    <header>
+
+    </header>
+
     <h1>Dishonored, une licence aimée mais oubliée</h1>
+    <a href ="./images/dishonored1.avif" alt="image dishonored"></a>
+
+
     <footer>
-<a href ="./images/dishonored1.avif" alt="image dishonored"></a>
+
     </footer>
 </body>
 </html>
