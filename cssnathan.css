@@ -90,48 +90,50 @@ nav ul li a:hover {
 
 /* container */
 
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-
 section {
-    margin-bottom: 60px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 100px; /* vrai espace avant footer */
 }
+
+section > * {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 section h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin: center;
     color: #ffffff;
     border-left: 5px solid #f5c542;
     padding-left: 12px;
 }
 
 section p {
-   font-size: 1rem;
+    font-size: 1rem;
     text-align: justify;
     color: #dddddd;
+    margin: center ;
+
 }
 
-/* Images */
-/* Images des sections principales */
 section img {
     display: block;
-    width: 100%;         /* occupe toute la largeur disponible */
-    max-width: 800px;    /* limite la largeur pour éviter que ce soit trop grand */
-    height: auto;        /* garde les proportions */
-    margin: 25px auto 0 auto;
-    border-radius: 8px;  /* un peu plus arrondi pour harmoniser */
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 25px auto 0;
+    border-radius: 8px;
     border: 2px solid #2e2e2e;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* léger relief */
-    object-fit: cover;   /* bien centrer les images si recadrage nécessaire */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
 section img:hover {
-    transform: scale(1.03); /* petit zoom au survol */
+    transform: scale(1.03);
 }
 
 
@@ -171,13 +173,17 @@ section img:hover {
     padding: 40px 20px;
     background: #1a1a1a;
     text-align: center;
+    width: 100%;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 18px;
     margin-top: 20px;
+
+    max-width: 100% ;
+    margin: 0;
 }
 
 .gallery-item img {
@@ -191,7 +197,9 @@ section img:hover {
     border: 3px solid var(--accent-pink);
 }
 
-
+.gallery {
+    margin-bottom: 120px;
+}
 
 
 /* Espacement responsive */
@@ -211,4 +219,27 @@ section img:hover {
     .section h2 {
         font-size: 1.5rem;
     }
+}
+
+
+footer p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.social-icons {
+    display: inline-block;
+}
+
+
+
+.social-icons a {
+    display: inline-block;
+}
+
+
+.social-icons img {
+    width: 42px;
+    margin: 8px;
 }
