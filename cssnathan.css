@@ -1,0 +1,115 @@
+/* DEBUT HEADER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #141414;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    background: #1b1b1b;
+    border-bottom: 3px solid #2e2e2e;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 18px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+
+nav ul li a:hover {
+    background: #2a2a2a;
+    color: #f5c542; /* petit côté gaming */
+}
+
+
+/* FIN HEADER*/
+
+/* container */
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-left: 5px solid #f5c542;
+    padding-left: 12px;
+}
+
+.section p {
+    font-size: 1rem;
+    text-align: justify;
+    color: #dddddd;
+}
+
+/* Images */
+.section img {
+    display: block;
+    max-width: 100%;
+    margin: 25px auto 0 auto;
+    border-radius: 6px;
+    border: 2px solid #2e2e2e;
+}
+
+/* fin container */
+
+
+
+/* contact */
+.contact-section {
+    padding: 30px 20px;
+    background: #000;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 42px;
+    margin: 8px;
+    filter: brightness(1.2);
+    transition: filter .3s ease;
+}
+
+.social-icons img:hover {
+    filter: brightness(1.6);
+}
+
+.test {
+    color: white;
+}
+/* fin contact */
