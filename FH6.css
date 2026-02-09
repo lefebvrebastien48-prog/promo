@@ -68,3 +68,16 @@ main-image img {
     transform: scale(1.05);
     border: 3px solid var(--accent-pink);
 }
+
+/* Section Info */
+.info-section {
+    padding: 30px 20px;
+    background: #111;
+    color: var(--text-light);
+}
+
+.info-section ul {
+    margin-top: 12px;
+    list-style-type: disc;
+    padding-left: 22px;
+}
