@@ -22,6 +22,14 @@ body {
     line-height: 1.6;
 }
 
+.main-image img {
+    width: 100%;      /* reste responsive */
+    max-width: 1200px; /* limite la taille max sur grand écran */
+    height: auto;     /* garde les proportions */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 h1, h2 {
     color: var(--white);
 }
