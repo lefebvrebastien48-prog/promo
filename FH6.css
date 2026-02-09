@@ -25,3 +25,59 @@ body {
 h1, h2 {
     color: var(--white);
 }
+
+/* Header Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #000, #2a2a2a);
+}
+
+.hero .logo {
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+main-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Galerie */
+.gallery {
+    padding: 40px 20px;
+    background: #1a1a1a;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform .3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    border: 3px solid var(--accent-pink);
+}
+
+/* Section Info */
+.info-section {
+    padding: 30px 20px;
+    background: #111;
+    color: var(--text-light);
+}
+
+.info-section ul {
+    margin-top: 12px;
+    list-style-type: disc;
+    padding-left: 22px;
+}
