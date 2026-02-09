@@ -24,6 +24,21 @@ body {
 }
 
 /* =========================
+   RUNES NORDIQUES (DECOR)
+========================= */
+
+.runes-bg {
+    position: fixed;
+    inset: 0;
+    background-image: url("images/rune.png");
+    background-size: 600px;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* =========================
    HEADER / HERO
 ========================= */
 
@@ -109,6 +124,28 @@ header {
     border-radius: 4px;
     box-shadow: 0 0 25px rgba(0,0,0,0.8);
 }
+
+/* =========================
+   ANIMATIONS CINEMATIQUES
+========================= */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    animation: fadeZoom 1.8s ease forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.5s; }
+.fade-in:nth-child(2) { animation-delay: 1.5s; }
+.fade-in:nth-child(3) { animation-delay: 4s; }
+
+@keyframes fadeZoom {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 
 /* =========================
    FOOTER
