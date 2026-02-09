@@ -17,6 +17,8 @@
 }
 
 body {
+    position: relative;
+    z-index: 1;
     background-color: var(--dark);
     color: var(--ash);
     font-family: "Segoe UI", Arial, sans-serif;
@@ -24,10 +26,38 @@ body {
 }
 
 /* =========================
+   RUNES NORDIQUES (ANIMÉES)
+========================= */
+
+.runes-bg {
+    position: fixed;
+    inset: 0;
+    background-image: url("images/rune.png");
+    background-size: 600px;
+    background-repeat: repeat;
+    opacity: 0.25;           /* au lieu de 0.04 */
+    animation: runesMove 8s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+    animation: runesMove 60s linear infinite;
+}
+
+@keyframes runesMove {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000px 1000px;
+    }
+}
+
+/* =========================
    HEADER / HERO
 ========================= */
 
 header {
+    position: relative;
+    z-index: 1;
     background: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.9)
@@ -42,7 +72,7 @@ header {
     text-align: center;
 }
 
-.hero h1 {
+header h1 {
     font-size: 4rem;
     color: var(--ice);
     letter-spacing: 4px;
@@ -86,6 +116,8 @@ header {
 ========================= */
 
 .content {
+    position: relative;
+    z-index: 1;
     max-width: 1100px;
     margin: auto;
     padding: 60px 20px;
@@ -108,6 +140,27 @@ header {
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* =========================
+   ANIMATIONS CINÉMATIQUES
+========================= */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    animation: fadeZoom 1.8s ease forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.5s; }
+.fade-in:nth-child(2) { animation-delay: 1.5s; }
+.fade-in:nth-child(3) { animation-delay: 2.5s; }
+
+@keyframes fadeZoom {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 /* =========================
