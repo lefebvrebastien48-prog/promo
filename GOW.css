@@ -1,0 +1,46 @@
+/* DEBUT HEADER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    width: 100%;
+    background: #1b1b1b;
+    border-bottom: 3px solid #2e2e2e;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 18px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+
+nav ul li a:hover {
+    background: #2a2a2a;
+    color: #f5c542; /* petit côté gaming */
+}
+
+
+/* FIN HEADER*/
