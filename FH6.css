@@ -99,3 +99,11 @@ main-image img {
 .social-icons img:hover {
     filter: brightness(1.6);
 }
+
+/* Footer */
+.footer {
+    padding: 16px;
+    background: #050505;
+    font-size: 14px;
+    text-align: center;
+}
