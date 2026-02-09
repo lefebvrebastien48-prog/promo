@@ -4,3 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Variables couleurs (inspirées du logo officiel) */
+:root {
+    --base-black: #111;
+    --white: #fff;
+    --accent-pink: #EA0C80; /* couleur vive proche du logo Horizon */ 
+    --text-light: #eaeaea;
+    --text-dark: #222;
+}
+
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--base-black);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: var(--white);
+}
