@@ -35,7 +35,8 @@ body {
     background-image: url("images/rune.png");
     background-size: 600px;
     background-repeat: repeat;
-    opacity: 0.04;
+    opacity: 0.25;           /* au lieu de 0.04 */
+    animation: runesMove 8s linear infinite;
     pointer-events: none;
     z-index: 0;
     animation: runesMove 60s linear infinite;
