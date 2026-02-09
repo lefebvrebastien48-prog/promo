@@ -1,0 +1,15 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables couleurs (inspirées du logo officiel) */
+:root {
+    --base-black: #111;
+    --white: #fff;
+    --accent-pink: #EA0C80; /* couleur vive proche du logo Horizon */ 
+    --text-light: #eaeaea;
+    --text-dark: #222;
+}
