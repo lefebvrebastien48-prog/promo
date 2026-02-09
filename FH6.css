@@ -13,3 +13,11 @@
     --text-light: #eaeaea;
     --text-dark: #222;
 }
+
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--base-black);
+    color: var(--text-light);
+    line-height: 1.6;
+}
