@@ -1,46 +1,123 @@
-/* DEBUT HEADER */
+/* =========================
+   PALETTE & BASE
+========================= */
+
+:root {
+    --dark: #0b0e11;
+    --wood: #2b1d12;
+    --ash: #b1b1b1;
+    --blood: #8b1e1e;
+    --ice: #cfd8dc;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: var(--dark);
+    color: var(--ash);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.8;
+}
+
+/* =========================
+   HEADER / HERO
+========================= */
 
 header {
-    width: 100%;
-    background: #1b1b1b;
-    border-bottom: 3px solid #2e2e2e;
-}
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.9)
+    ),
+    url("images/cover GOW.jpg") center/cover no-repeat;
 
-
-nav ul {
-    list-style: none;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-nav ul li {
-    margin: 0 20px;
+.hero h1 {
+    font-size: 4rem;
+    color: var(--ice);
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
+.subtitle {
+    color: var(--blood);
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
 
-nav ul li a {
-    display: block;
-    padding: 18px 10px;
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: absolute;
+    top: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--ash);
     font-weight: bold;
-    letter-spacing: 1px;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: color 0.3s;
 }
 
-
-nav ul li a:hover {
-    background: #2a2a2a;
-    color: #f5c542; /* petit côté gaming */
+.navbar a:hover {
+    color: var(--blood);
 }
 
+/* =========================
+   CONTENT
+========================= */
 
-/* FIN HEADER*/
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.story {
+    margin-bottom: 80px;
+    display: grid;
+    gap: 30px;
+}
+
+.story p {
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.03);
+    padding: 25px;
+    border-left: 4px solid var(--blood);
+}
+
+.story img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--wood);
+    text-align: center;
+    padding: 20px;
+    color: var(--ice);
+    font-size: 0.9rem;
+}
