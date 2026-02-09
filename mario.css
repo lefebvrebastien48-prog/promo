@@ -44,3 +44,27 @@ nav ul li a:hover {
 
 
 /* FIN HEADER*/
+
+
+
+
+
+/* contact */
+.contact-section {
+    padding: 30px 20px;
+    background: #000;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 42px;
+    margin: 8px;
+    filter: brightness(1.2);
+    transition: filter .3s ease;
+}
+
+.social-icons img:hover {
+    filter: brightness(1.6);
+}
+
+/* fin contact */
