@@ -11,8 +11,8 @@ Le sujet de notre projet est : **[sur les jeux vidéos préféré de chacun]**.
 Notre groupe est composé de :
 - LEFEBVRE Bastien
 - LEMAITRE Kentin
-- LEPREVOST Nathan
-- RIGAUDEAU Noah
+- LEPREVOST Nathan (Leprena2)
+- RIGAUDEAU Noah (NRS27)
 
 
 ## Fonctionnalités mises en place
